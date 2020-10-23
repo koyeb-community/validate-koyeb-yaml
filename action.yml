@@ -1,0 +1,9 @@
+name: 'Validate Koyeb yaml'
+description: 'An action that validates koyeb yaml configuration file"
+outputs:
+  errir: # id of output
+    description: 'The error message that was returned, this is empty on success'
+runs:
+  using: 'node12'
+  main: 'index.js'
+
