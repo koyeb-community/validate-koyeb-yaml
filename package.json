@@ -1,0 +1,15 @@
+{
+  "name": "validate-yaml-action",
+  "version": "0.0.1",
+  "description": "A simple github action to validate Koyeb yaml",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/glob": "^0.1.0"
+  }
+}
