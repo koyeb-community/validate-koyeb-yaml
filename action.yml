@@ -1,8 +1,10 @@
-name: 'Validate Koyeb yaml'
-description: 'An action that validates koyeb yaml configuration file"
-outputs:
-  errir: # id of output
-    description: 'The error message that was returned, this is empty on success'
+name: 'koyeb-validate-yaml-action'
+description: 'An action that validates koyeb yaml configuration file'
+inputs:
+  pattern:
+    description: 'A pattern to use to finds the files that should be koyeb.yaml'
+    required: true
+    default: '**/koyeb.yml,**/koyeb.yaml,**/.koyeb.yml,**/.koyeb.yaml'
 runs:
   using: 'node12'
   main: 'index.js'
