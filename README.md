@@ -17,12 +17,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/validate-koyeb-yaml@v1
+      - uses: koyeb-community/validate-koyeb-yaml@v1
 ```
 
 __Advanced__: : With a specific set of files:
 ```yaml
-uses: actions/koyeb-validate-yaml-action
+uses: koyeb-community/validate-koyeb-yaml@v1
 with:
   patterns: '**/koyeb.yaml,**/koyeb.yml'
 ```
